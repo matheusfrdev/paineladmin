@@ -4,8 +4,7 @@ Um painel administrativo simples para gerenciamento e visualização de dados.
 
 ## ✨ Recursos
 
-- Dashboard
-- Gerenciamento de usuários
+- Painel de Login
 - Interface responsiva
 - Navegação simples
 
@@ -14,12 +13,4 @@ Um painel administrativo simples para gerenciamento e visualização de dados.
 - HTML
 - CSS
 - JavaScript
-
-## 🚀 Executar
-
-```bash
-git clone https://github.com/seuusuario/admin-dashboard.git
-```
-
-Abra o `index.html`.
 
