@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin</title>
+  <style>
+    body{
+      margin:0;height:100vh;display:flex;align-items:center;justify-content:center;
+      font-family:Arial,Helvetica,sans-serif;background:#071022;color:#f1f5f9;
+      background:linear-gradient(180deg,#071022 0%, #071233 60%);color:#e6eef8
+    }
+    .container{
+      text-align:center;background:rgba(255,255,255,0.05);
+      padding:40px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.4);
+    }
+    h1{margin-bottom:20px;font-size:24px}
+    .buttons{display:flex;gap:14px;justify-content:center}  
+    button{
+      padding:12px 20px;border:none;border-radius:8px;cursor:pointer;
+      font-weight:600;font-size:15px;transition:.25s all
+    }
+    .btn-login{background:#3b82f6;color:white}
+    .btn-login:hover{background:#2563eb}
+    .btn-compras{background:#3b82f6;color:white}
+    .btn-compras:hover{background:#2563eb}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Painel</h1>
+    <h3></h3>
+    <div class="buttons">
+      <button class="btn-login" id="login">Login</button>   
+    </div>
+  </div>
+
+  <script>
+    // botão Voltar -> redirecionar para a página de redirecionamento criada antes
+    document.getElementById('login').addEventListener('click', () => {
+      window.location.href = 'pag2.html'; // troque pelo caminho real do arquivo anterior
+    });
+
+  </script>
+
+</body>
+</html>

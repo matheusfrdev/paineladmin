@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin</title>
+  <style>
+    body{
+      margin:0;font-family:Arial,Helvetica,sans-serif;
+      background:#f4f4f4;color:#111;display:flex;justify-content:center;align-items:center;
+            background:linear-gradient(180deg,#071022 0%, #071233 60%);color:#e6eef8;
+      height:100vh
+    }
+    .profile{
+      background:#071022;padding:30px;border-radius:12px;box-shadow:0 4px 12px rgba(236, 233, 233, 0.1);
+      text-align:center;width:300px
+    }
+    .profile img{
+      width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid #ddd
+    }
+    h2{margin:15px 0 5px;font-size:22px}
+    p{margin:0;font-size:14px;color:#555}
+    .stats{display:flex;justify-content:space-around;margin-top:20px}
+    .stats div{text-align:center}
+    .stats strong{display:block;font-size:16px}
+    button{
+      margin-top:20px;padding:8px 16px;border:none;border-radius:6px;
+      background:#3b82f6;color:#fff;cursor:pointer;font-weight:600
+    }
+    button:hover{background:#2563eb}
+    .edit-area{display:none;margin-top:15px;text-align:left}
+    .edit-area input,.edit-area textarea{
+      width:100%;margin-bottom:10px;padding:8px;border:1px solid #ccc;border-radius:6px
+    }
+    .btn-voltar{background:#3b82f6;color:white}
+    .btn-voltar:hover{background:#2563eb}
+  </style>
+</head>
+<body>
+  <div class="profile">
+    <img src="fotos/aa.jpg" alt="Foto de Perfil" id="foto">
+    <h2 id="username">@matheuvz</h2>
+    <div class="buttons">
+      <button class="btn-voltar" id="login">Voltar</button>   
+    </div>
+
+  <script>
+    // botão Voltar -> redirecionar para a página de redirecionamento criada antes
+    document.getElementById('login').addEventListener('click', () => {
+      window.location.href = 'pag1.html'; // troque pelo caminho real do arquivo anterior
+    });
+
+  </script>
+
+</body>
+</html>
